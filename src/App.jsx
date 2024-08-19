@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import HomePage from "./pages/HomePage/HomePage";
@@ -10,21 +10,19 @@ import "./App.css";
 import "./assets/styles/global.css";
 
 const App = () => (
-  <Router>
-    <div className="app-container">
-      <Header />
-      <div className="content-wrapper">
-        <main>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/menu" element={<MenuPage />} />
-            <Route path="/about" element={<AboutPage />} />
-          </Routes>
-        </main>
-      </div>
-      <Footer />
+  <div className="app-container">
+    <Header />
+    <div className="content-wrapper">
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/menu" element={<MenuPage />} />
+          <Route path="/about" element={<AboutPage />} />
+        </Routes>
+      </main>
     </div>
-  </Router>
+    <Footer />
+  </div>
 );
 
 export default App;
