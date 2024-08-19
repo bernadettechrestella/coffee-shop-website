@@ -1,0 +1,22 @@
+/* src/App.css */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Take up remaining space */
+}
+
+footer {
+  background-color: #333; /* Footer background color */
+  color: #fff; /* Footer text color */
+  text-align: center;
+  width: 100%;
+}

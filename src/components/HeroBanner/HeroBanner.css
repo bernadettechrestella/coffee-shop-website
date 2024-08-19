@@ -1,0 +1,53 @@
+/* src/components/HeroBanner/HeroBanner.css */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 90%; /* Ensure full height */
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure full height */
+}
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrolling */
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container */
+  position: absolute; /* Position image behind content */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place the image behind the content */
+}
+
+.hero-content {
+  position: absolute;
+  top: 0; /* Align text to the top */
+  left: 0; /* Align text to the left */
+  padding: 3rem; /* Add padding to keep text away from edges */
+  background-color: transparent; /* Remove background color */
+  color: white; /* Text color for contrast */
+  width: 100%; /* Full width */
+  text-align: left; /* Align text to the left */
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+  margin: 0; /* Remove margin */
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-top: 1; /* Remove margin */
+}

@@ -1,0 +1,42 @@
+/* src/pages/MenuPage/MenuPage.css */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure full height for body */
+}
+
+.menu-page {
+  padding: 2rem;
+  background-color: #f5f5f5; /* Background color same as About Page */
+  min-height: calc(
+    100vh - 60px
+  ); /* Adjust based on navbar height, here assuming 60px height for navbar */
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.menu-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+}
+
+.menu-item-name {
+  font-size: 1.2rem;
+}
+
+.menu-item-price {
+  font-size: 1.1rem;
+  color: #333;
+}

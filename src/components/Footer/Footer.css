@@ -1,0 +1,24 @@
+/* src/components/Footer/Footer.css */
+.footer {
+  background-color: #fff; /* Background color white */
+  color: #333; /* Text color dark */
+  text-align: center;
+  width: 100%;
+  /* No fixed positioning */
+}
+
+/* Ensure main content pushes footer down */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+main {
+  flex: 1;
+}
+
+/* Optional: To ensure footer is not overlapped */
+.content-wrapper {
+  padding-bottom: 4rem; /* Space for footer */
+}
