@@ -4,9 +4,8 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import "./index.css"; // Make sure global styles are included
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );
